@@ -55,10 +55,6 @@ const Seo = ({ description, lang, meta, title, type }) => {
           content: type || `website`,
         },
         {
-          property: `og:url`,
-          content: document.URL
-        },
-        {
           property: `og:site_name`,
           content: defaultTitle
         },
