@@ -1,10 +1,8 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+date: "2022-03-01T22:12:03.284Z"
+description: "This is a sample blog, I use this as a template to create new ones in no time. Take a look if you like to know about Markdown text usage and available markdown text features."
 ---
-
-This is my first post on my new fake blog! How exciting!
 
 I'm sure I'll write a lot more interesting things in the future.
 
@@ -89,7 +87,8 @@ This is a paragraph.
 
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+    > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 > ## This is a header.
 >
