@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: Markdown example blog
 date: "2022-03-01T22:12:03.284Z"
-description: "This is a sample blog, I use this as a template to create new ones in no time. Take a look if you like to know about Markdown text usage and available markdown text features."
+description: "This is a markdown usage example blog, I use this as a template to create new ones in no time. Take a look if you like to know about Markdown text usage and available markdown text features."
 ---
 
 I'm sure I'll write a lot more interesting things in the future.
