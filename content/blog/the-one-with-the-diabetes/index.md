@@ -2,6 +2,7 @@
 title: The one with the diabetes
 date: "2022-03-06T22:12:03.284Z"
 description: "It's curious to think how humans evolved from apes/monkeys and became self aware. But did it happen by accident or someone helped us? 🤔"
+category: "science"
 ---
 
 > “In evolutionary terms, that means we asked for it.”
@@ -28,7 +29,10 @@ Back to the story, if humans have to survive the freezing cold, then our blood s
 
 > __Another Fact__: According to GOOGLE: "Plain water freezes at 32 degrees F, but when sugar, or salt, or other solutes are dissolved in it, the freezing point gets lower. The standard 4:1 solution starts freezing at 26-27 degrees F." which is around - 3 C.
 
-So as to survive the cold our body found a way to decrease the freezing point of the blood. By increasing the blood sugar levels and that's how the human species ended up with the most common chronic disease of our current generation. This behaviour was also discovered in some other living species as well so hopefully we are not alone🤞.
+So as to survive the cold our body found a way to decrease the freezing point of the blood. By increasing the blood sugar levels and that's how the human species ended up with the most common chronic disease of our current generation. 
+
+This behaviour was also discovered in some other living species as well so hopefully we are not alone🤞.
+_Ice wine was supposedly created by accident 400 years ago, when a German vintner’s crop was hit by a sudden frost. The grapes were shrunken and yielded much less juice, but when he pressed them, they were incredibly sweet. The shrunken nature of the grapes was due to water loss, which plants evolved to do in order to protect themselves from freezing. The increased sugar concentration is for the same reason, as sugar is a “natural antifreeze.”_
     
     Once a survival mechanism is now a multi-billion dollar indutry 🤑.
 

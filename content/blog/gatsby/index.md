@@ -2,6 +2,7 @@
 title: Gatsby - what i'm trying to understand
 date: "2022-03-08T22:12:03.284Z"
 description: "Not sure what gatsby does or how it does it? join the club. I've been trying my best to learn the same thing for some time now, i've written what i know..."
+category: "programming"
 ---
 
 I'm sure I'll write a lot more interesting things in the future.
