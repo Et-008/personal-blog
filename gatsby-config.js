@@ -33,6 +33,20 @@ module.exports = {
       options: {},
     },
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        sitemap: "https://arun-et-008.netlify.app/sitemap.xml",
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -92,6 +106,22 @@ module.exports = {
             type: `image/png`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 5000,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-MJNJFDQ",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+        enableWebVitalsTracking: true,
+        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
     `gatsby-plugin-sharp`,
