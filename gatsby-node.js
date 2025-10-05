@@ -16,10 +16,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     graphql(`
       {
-        allMarkdownRemark(
-          limit: 1000
-          filter: { frontmatter: { draft: { ne: true } } }
-        ) {
+        allMarkdownRemark(limit: 1000, filter: { frontmatter: {} }) {
           edges {
             node {
               fields {
@@ -29,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                 tags
                 layout
                 category
+                draft
               }
             }
           }

@@ -60,17 +60,17 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
+          instagram
           twitter
           github
           rss
-          vk
+          whatsapp
         }
       }
     }
     allMarkdownRemark(
       limit: 2000
-      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+      filter: { frontmatter: { layout: { eq: "post" } } }
     ) {
       group(field: frontmatter___tags) {
         fieldValue

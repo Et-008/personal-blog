@@ -65,7 +65,7 @@ class PostTemplateDetails extends React.Component {
             <p className="post-single__footer-text">
               {subtitle}
               <a
-                href={`https://twitter.com/${author.twitter}`}
+                href={`https://x.com/${author.twitter}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

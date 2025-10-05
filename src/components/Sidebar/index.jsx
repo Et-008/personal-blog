@@ -3,7 +3,7 @@ import get from 'lodash/get'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
 import Links from '../Links'
-import profilePic from '../../pages/photo.jpg'
+import profilePic from '../../pages/photo.png'
 import './style.scss'
 
 class Sidebar extends React.Component {
@@ -24,8 +24,8 @@ class Sidebar extends React.Component {
           <img
             src={profilePic}
             className="sidebar__author-photo"
-            width="75"
-            height="75"
+            width="185"
+            height="175"
             alt={author.name}
           />
         </Link>

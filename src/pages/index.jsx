@@ -47,17 +47,17 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
+          instagram
           twitter
           github
           rss
-          vk
+          whatsapp
         }
       }
     }
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+      filter: { frontmatter: { layout: { eq: "post" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
             date
             category
             description
+            draft
           }
         }
       }

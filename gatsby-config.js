@@ -1,15 +1,15 @@
 const lost = require('lost')
 const pxtorem = require('postcss-pxtorem')
 
-const url = 'https://lumen.netlify.com'
+const url = 'https://et-008.in'
 
 module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
+    title: 'Arun Elanthamil',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      'Software developer(MERN), excited about new tech, interested in finding the roots, CLI > GUI, Books >> PDFs.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -21,19 +21,19 @@ module.exports = {
         label: 'About me',
         path: '/about/',
       },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
+      // {
+      //   label: 'Contact me',
+      //   path: '/contact/',
+      // },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      name: 'Arun Elanthamil',
+      email: 'arunet008@gmail.com',
+      twitter: 'et_arun',
+      github: 'Et-008',
+      instagram: 'arun_elanthamil',
+      whatsapp: '+918825579642',
       rss: '#',
-      vk: '#',
     },
   },
   plugins: [
@@ -70,12 +70,11 @@ module.exports = {
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               ),
-            query: `
-              {
+            query: `{
                 allMarkdownRemark(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+                  filter: { frontmatter: { layout: { eq: "post" } } }
                 ) {
                   edges {
                     node {

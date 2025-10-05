@@ -38,11 +38,11 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
+          instagram
           twitter
           github
           rss
-          vk
+          whatsapp
         }
       }
     }
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
         frontmatter: {
           category: { eq: $category }
           layout: { eq: "post" }
-          draft: { ne: true }
+          # draft: { ne: true }
         }
       }
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -68,6 +68,7 @@ export const pageQuery = graphql`
             date
             category
             description
+            draft
           }
         }
       }
