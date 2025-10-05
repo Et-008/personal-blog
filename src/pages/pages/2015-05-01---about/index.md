@@ -10,7 +10,7 @@ I am a passionate and results-driven **Front-End Developer** with a strong focus
 
 I thrive on translating design concepts into pixel-perfect, accessible, and responsive web applications, always seeking out best practices to optimize performance and developer efficiency.
 
-![While my professional life is centered on coding, I maintain a broad curiosity that fuels both personal growth and problem-solving at work. I'm fascinated by the intricacies of the human mind and behavior, dedicating time to reading books and content related to psychology.](./1.jpg)
+![While my professional life is centered on coding, I maintain a broad curiosity that fuels both personal growth and problem-solving at work. I'm fascinated by the intricacies of the human mind and behavior, dedicating time to reading books and content related to psychology.](./book.jpg)
 
 _While my professional life is centered on coding, I maintain a broad curiosity that fuels both personal growth and problem-solving at work. I'm fascinated by the intricacies of the human mind and behavior, dedicating time to reading books and content related to psychology._
 
