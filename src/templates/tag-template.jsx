@@ -52,7 +52,7 @@ export const pageQuery = graphql`
         frontmatter: {
           tags: { in: [$tag] }
           layout: { eq: "post" }
-          # draft: { ne: true }
+          draft: { ne: true }
         }
       }
       sort: { order: DESC, fields: [frontmatter___date] }

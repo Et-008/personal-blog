@@ -6,7 +6,7 @@ import './style.scss'
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { subtitle, author } = this.props.data.site.siteMetadata
+    const { author } = this.props.data.site.siteMetadata
     const post = this.props.data.markdownRemark
     const tags = post.fields.tagSlugs
 
@@ -53,6 +53,9 @@ class PostTemplateDetails extends React.Component {
               /* eslint-disable-next-line react/no-danger */
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
+
+            <br />
+            <br />
             <div className="post-single__date">
               <em>
                 Published {moment(post.frontmatter.date).format('D MMM YYYY')}
@@ -63,13 +66,20 @@ class PostTemplateDetails extends React.Component {
             {tagsBlock}
             <hr />
             <p className="post-single__footer-text">
-              {subtitle}
+              Socials:{' '}
               <a
                 href={`https://x.com/${author.twitter}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <br /> <strong>{author.name}</strong> on Twitter
+                <i className="icon-twitter" />
+              </a>
+              <a
+                href={`https://www.github.com/${author.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="icon-github" />
               </a>
             </p>
             {commentsBlock}
