@@ -17,6 +17,7 @@ class PostTemplate extends React.Component {
           <Helmet>
             <title>{`${postTitle} - ${title}`}</title>
             <meta name="description" content={description} />
+            <script src="https://cdn.jsdelivr.net/npm/@mariusbongarts/previewbox/dist/link/index.min.js" />
           </Helmet>
           <PostTemplateDetails {...this.props} />
         </div>

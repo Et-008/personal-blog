@@ -70,7 +70,9 @@ These properties work together to manage rendering, updates, and debugging. Core
 
 1. <strong>$$typeof</strong>: This property is used to identify and differentiate React elements from regular JSON.
 
-_Read the original_ [_pull request_](https://github.com/facebook/react/pull/4832?source=post_page-----ecfee15f875f---------------------------------------) _to understand the rationale why <cite>$$typeof</cite> should exist:_
+_Read the original pull request to understand the rationale why <cite>$$typeof</cite> should exist:_
+
+<previewbox-link href="https://github.com/facebook/react/pull/4832?source=post_page-----ecfee15f875f---------------------------------------"> </previewbox-link>
 
 According to "Sebastian Markbåge" who made this change, the primary motivation is to prevent XSS attacks in react_v0.14.
 
@@ -127,5 +129,44 @@ The fallback solution is a plain well-known number.
 <blockquote>
 Why this number specifically? 0xeac7 kinda looks like “React”.
 <cite> - Dan Abramov</cite>
-
 </blockquote>
+
+<hr />
+
+2.  <strong>key</strong>: Used during reconciliation to determine if a fiber can be reused when components are reordered
+
+3.  <strong>type</strong>: Describes what kind of component this represents - for composite components it's the function/class, for DOM elements it's a string like "div"
+
+4.  <strong>tag</strong>: Numeric identifier indicating the fiber type (FunctionComponent, ClassComponent, HostComponent, etc.)
+
+below are the possible Numeric identifiers for tag property in react
+
+        export const FunctionComponent = 0;
+        export const ClassComponent = 1;
+        export const HostRoot = 3; // Root of a host tree. Could be nested inside another node.
+        export const HostPortal = 4; // A subtree. Could be an entry point to a different renderer.
+        export const HostComponent = 5;
+        export const HostText = 6;
+        export const Fragment = 7;
+        export const Mode = 8;
+        export const ContextConsumer = 9;
+        export const ContextProvider = 10;
+        export const ForwardRef = 11;
+        export const Profiler = 12;
+        export const SuspenseComponent = 13;
+        export const MemoComponent = 14;
+        export const SimpleMemoComponent = 15;
+        export const LazyComponent = 16;
+        export const IncompleteClassComponent = 17;
+        export const DehydratedFragment = 18;
+        export const SuspenseListComponent = 19;
+        export const ScopeComponent = 21;
+        export const OffscreenComponent = 22;
+        export const LegacyHiddenComponent = 23;
+        export const CacheComponent = 24;
+        export const TracingMarkerComponent = 25;
+        export const HostHoistable = 26;
+        export const HostSingleton = 27;
+        export const IncompleteFunctionComponent = 28;
+        export const Throw = 29;
+        export const ViewTransitionComponent = 30;

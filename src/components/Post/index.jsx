@@ -10,7 +10,7 @@ class Post extends React.Component {
       date,
       category,
       description,
-      draft,
+      // draft,
     } = this.props.data.node.frontmatter
     const { slug, categorySlug } = this.props.data.node.fields
 
@@ -36,9 +36,9 @@ class Post extends React.Component {
           </Link>
         </h2>
         <p className="post__description">{description}</p>
-        <Link className="post__readmore" to={draft ? '' : slug}>
+        {/* <Link className="post__readmore" to={draft ? '' : slug}>
           {draft ? 'Coming soon' : 'Read'}
-        </Link>
+        </Link> */}
       </div>
     )
   }

@@ -71,7 +71,7 @@ export const pageQuery = graphql`
             date
             category
             description
-            draft
+            # draft
           }
         }
       }
