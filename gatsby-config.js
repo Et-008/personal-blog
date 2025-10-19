@@ -171,5 +171,27 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: 'gatsby-plugin-csp',
+      options: {
+        disableOnDev: false,
+        reportOnly: false,
+        mergeScriptHashes: true,
+        mergeStyleHashes: true,
+        mergeDefaultDirectives: true,
+        directives: {
+          'script-src':
+            "'self' 'unsafe-eval' www.google-analytics.com https://cdn.jsdelivr.net",
+          'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+          'style-src-elem':
+            "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
+          'img-src':
+            "'self' data: https://media.geeksforgeeks.org https://developer.mozilla.org https://images.unsplash.com/photo-1701311310084-159429e16320",
+          'connect-src':
+            "'self' https://previewbox.link https://cdn.jsdelivr.net",
+          'font-src': "'self' data: https://fonts.gstatic.com",
+        },
+      },
+    },
   ],
 }

@@ -59,10 +59,6 @@ All pages, templates and components are built, split and mapped during **Build**
 
 ---
 
----
-
----
-
 Event though these pages are seperate, once the homepage is loaded, react takes over and makes the static pages into a single app and makes it look flawless and smooth like a web app.
 
 It's a little bit of this, little bit of that. Everything is starting to make sense now...

@@ -5,7 +5,7 @@ path: '/posts/websocket'
 tags:
   - 'Javascript'
   - 'React'
-title: Websockets
+title: 'Websockets - When and how to use'
 date: '2023-01-12T14:02:03.284Z'
 description: "If you've used Live collabration tool like Figma, Live web chat or seen Live cricket score, then you have used an websocket connection."
 category: 'javascript'
@@ -110,4 +110,6 @@ Once unregistered successfully, Websocket.close() is called and the connection i
 
 FYI: [Whatsapp uses Websocket with MQTT(sub-protocol) for real time messaging](https://medium.com/@jayanththalla33/developer-blog-how-whatsapp-handles-real-time-messaging-and-why-messages-say-waiting-for-this-0c00231dbfe7)
 
-What is MQTT? [check it here](https://www.geeksforgeeks.org/computer-networks/introduction-of-message-queue-telemetry-transport-protocol-mqtt/)
+What is MQTT?
+
+<previewbox-link href="https://www.geeksforgeeks.org/computer-networks/introduction-of-message-queue-telemetry-transport-protocol-mqtt"> </previewbox-link>
