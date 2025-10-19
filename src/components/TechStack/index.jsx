@@ -46,15 +46,38 @@ const techStack = [
 ]
 
 class TechStack extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      expanded: false,
+    }
+  }
+  handleExpand = () => {
+    this.setState({ expanded: !this.state.expanded })
+  }
   render() {
     return (
-      <div className="tech-stack">
-        {techStack.map(item => (
-          <span className="tech-stack-icon-container" title={item.name}>
-            <img src={item.icon} alt={item.name} className="tech-stack-icon" />
-            {item.accronym || item.name}
-          </span>
-        ))}
+      <div className="position-relative">
+        <div className={`tech-stack ${this.state.expanded ? 'expanded' : ''}`}>
+          {techStack.map(item => (
+            <span className="tech-stack-icon-container" title={item.name}>
+              <img
+                src={item.icon}
+                alt={item.name}
+                className="tech-stack-icon"
+              />
+              {item.accronym || item.name}
+            </span>
+          ))}
+        </div>
+        {!this.state.expanded && (
+          <button
+            className="tech-stack-expand-button"
+            onClick={this.handleExpand}
+          >
+            {this.state.expanded ? '▲' : '▼'}
+          </button>
+        )}
       </div>
     )
   }

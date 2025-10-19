@@ -10,6 +10,11 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   padding: 20px 0;
+  height: 200px;
+  overflow: hidden;
+}
+.tech-stack.expanded {
+  height: auto;
 }
 .tech-stack-icon-container {
   width: 19%;
@@ -26,4 +31,24 @@
   width: 30px !important;
   height: 30px !important;
   display: inline !important;
+}
+.position-relative {
+  position: relative;
+}
+.tech-stack-expand-button {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to bottom, #ffffff00, #00000090);
+  z-index: 100;
 }
