@@ -22,8 +22,8 @@ module.exports = {
         path: '/about/',
       },
       // {
-      //   label: 'Contact me',
-      //   path: '/contact/',
+      //   label: 'Projects',
+      //   path: '/projects',
       // },
     ],
     author: {
@@ -186,7 +186,7 @@ module.exports = {
           'style-src-elem':
             "'self' 'unsafe-inline' blob: https://fonts.googleapis.com",
           'img-src':
-            "'self' data: https://media.geeksforgeeks.org https://developer.mozilla.org https://images.unsplash.com/photo-1701311310084-159429e16320",
+            "'self' data: https://media.geeksforgeeks.org https://developer.mozilla.org https://images.unsplash.com/photo-1701311310084-159429e16320 https://lang-q.com https://images.unsplash.com/photo-1536765659537-ac6b544ea73b https://www.svgrepo.com",
           'connect-src':
             "'self' https://previewbox.link https://cdn.jsdelivr.net",
           'font-src': "'self' data: https://fonts.gstatic.com",

@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
 import Links from '../Links'
+import TechStack from '../TechStack'
 import profilePic from '../../pages/photo.png'
 import './style.scss'
 
@@ -52,6 +53,7 @@ class Sidebar extends React.Component {
         <div className="sidebar__inner">
           <div className="sidebar__author">{authorBlock}</div>
           <div>
+            <TechStack />
             <Menu data={menu} />
             <Links data={author} />
             <p className="sidebar__copyright">{copyright}</p>
